@@ -1,0 +1,7 @@
+{
+  "explorer.sortOrder": "type",
+  "files.associations": {
+    "utils.h": "c",
+    "ntdefs.h": "c"
+  },
+}
