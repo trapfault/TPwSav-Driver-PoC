@@ -1,0 +1,9 @@
+FILE(GLOB_RECURSE SourceFiles
+    "${CMAKE_CURRENT_SOURCE_DIR}/*.c"
+)
+
+ADD_EXECUTABLE(TPwSav
+    ${SourceFiles}
+    )
+
+INCLUDE_DIRECTORIES( "${CMAKE_SOURCE_DIR}/include" )
