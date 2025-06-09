@@ -42,6 +42,8 @@ See how virtual memory translation is implemented in [vtop.c](src/TPwSav-POC/vto
 ## How to use
 
 You can compile this project yourself, it reads the `EPROCESS`'s `UniqueProcessId` field by resolving the `EPROCESS` structure of the System Process using `PsInitialSystemProcess`.
+> **Warning:** Everything was tested on Windows build 24H2. The offsets in the `EPROCESS` structure might be different on your system.
+
 
 ```powershell
 cmake . --preset Debug
