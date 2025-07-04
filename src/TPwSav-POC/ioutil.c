@@ -30,16 +30,16 @@ TpwArbitaryWriteIOByte(
     Buffer[0] = Port;
     Buffer[1] = Value;
 
-	BOOL Result = DeviceIoControl(
-		DeviceHandle,
-		CTL_TPWSAV_OUTB,
-		&Buffer,
-		sizeof(Buffer),
-		NULL,
-		0,
-		&BytesReturned,
-		NULL
-	);
+    BOOL Result = DeviceIoControl(
+        DeviceHandle,
+        CTL_TPWSAV_OUTB,
+        &Buffer,
+        sizeof(Buffer),
+        NULL,
+        0,
+        &BytesReturned,
+        NULL
+    );
 
-	return Result;
+    return Result;
 }
